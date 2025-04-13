@@ -1,0 +1,224 @@
+/*
+<main>
+stages
+
+GPaustralia
+GPchina
+BuilderGPaustralia
+BuildersGPchina
+
+Hpos
+Hname
+Hpoints
+pos
+name
+points
+*/
+
+html {
+  background-position: center;
+  background-image: url(./img/f1wall.jpg);
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: sans-serif;
+}
+
+.backgroundCover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #2d7afaaa; /* #RRGGBBAA RGB */
+  z-index: -10;
+}
+
+.logo {
+  height: 150px;
+}
+
+.flag {
+  height: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: white;
+}
+
+h2 {
+  font-size: 3rem;
+  width: fit-content;
+  margin: 1rem auto;
+  color: white;
+}
+
+main,
+.stages {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+main {
+  font-size: 35px;
+}
+
+.stages {
+  flex-wrap: wrap;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  margin-inline: 15%;
+}
+
+.stages table {
+  margin-top: 2rem;
+}
+
+.pointSystem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+table {
+  border-radius: 0.5rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 0.3rem 0.8rem;
+}
+
+th {
+  background-color: black;
+  color: whitesmoke;
+}
+
+td {
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffffbb;
+}
+tr:nth-child(odd) {
+  background-color: #f1f1f1bb;
+}
+
+.pos {
+  font-weight: bolder;
+}
+
+.name {
+  float: left;
+}
+
+.Hpos::before {
+  content: " ";
+  background-image: url(./img/award.png);
+  /* https://www.flaticon.com/free-icons/trophy Trophy icons created by Freepik - Flaticon */
+  background-size: contain;
+  display: inline-block;
+  align-items: center;
+  height: 1em;
+  width: 1em;
+  filter: invert(1);
+  margin-right: 5px;
+}
+
+[data-img]::after {
+  content: " ";
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 1em;
+  width: 5em;
+  margin-left: 5px;
+}
+
+[data-img="mclaren"]::after {
+  background-image: url(https://cdn.worldvectorlogo.com/logos/mclaren-racing-logo.svg);
+}
+[data-img="ferrari"]::after {
+  background-image: url(https://cdn.worldvectorlogo.com/logos/ferrari-6.svg);
+}
+[data-img="mercedes"]::after {
+  background-image: url(https://cdn.worldvectorlogo.com/logos/mercedes-benz-9.svg);
+}
+[data-img="redbull"]::after {
+  background-image: url(https://www.redbullracing.com/_next/static/media/redbullracing-logo.2b2d869c.svg);
+}
+[data-img="astonmartin"]::after {
+  background-image: url(https://cdn.worldvectorlogo.com/logos/aston-martin-1.svg);
+}
+[data-img="williams"]::after {
+  background-image: url(https://static.wikia.nocookie.net/logopedia/images/5/5d/AtlassianWilliamsRacing_2025.svg);
+}
+[data-img="alpine"]::after {
+  background-image: url(https://cdn.worldvectorlogo.com/logos/alpine-11.svg);
+}
+[data-img="haas"]::after {
+  background-image: url(https://cdn.worldvectorlogo.com/logos/haas-f1-team-logo.svg);
+}
+
+[data-img="gbr"]::after {
+  background-image: url(https://www.worldometers.info/img/flags/small/tn_uk-flag.gif);
+}
+[data-img="hol"]::after {
+  background-image: url(https://www.worldometers.info/img/flags/small/tn_nl-flag.gif);
+}
+[data-img="aus"]::after {
+  background-image: url(https://www.worldometers.info/img/flags/small/tn_as-flag.gif);
+}
+[data-img="ita"]::after {
+  background-image: url(https://www.worldometers.info/img/flags/small/tn_it-flag.gif);
+}
+[data-img="mon"]::after {
+  background-image: url(https://www.worldometers.info/img/flags/small/tn_mn-flag.gif);
+}
+[data-img="tai"]::after {
+  background-image: url(https://www.worldometers.info/img/flags/small/tn_th-flag.gif);
+}
+[data-img="can"]::after {
+  background-image: url(https://www.worldometers.info/img/flags/small/tn_ca-flag.gif);
+}
+[data-img="ale"]::after {
+  background-image: url(https://www.worldometers.info/img/flags/small/tn_gm-flag.gif);
+}
+[data-img="fra"]::after {
+  background-image: url(https://www.worldometers.info/img/flags/small/tn_fr-flag.gif);
+}
+
+footer {
+  margin-top: 5rem;
+  height: 20rem;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer a {
+  text-decoration: none;
+}
+footer a:visited {
+  color: white;
+}
